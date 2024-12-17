@@ -5,6 +5,9 @@ import google.generativeai as genai
 # Load the CSV file
 file_path = "Promotion.csv"
 
+
+gemini_api_key = st.secrets["GEMINI_API_KEY"]
+
 # Read the CSV file into a DataFrame
 def load_data():
     try:
@@ -25,8 +28,6 @@ df = load_data()
 st.subheader("Product Promotion Details")
 st.write(df)
 
-import pandas as pd
-import streamlit as st
 
 # Assuming df is your existing DataFrame
 # Create the form for creating a new product
@@ -148,7 +149,6 @@ else:
 
 # Gemini API integration for promotions
 def generate_promotion(content_type, product_data):
-    gemini_api_key = st.secrets["GEMINI_API_KEY"]
     if gemini_api_key:  # If Gemini API key exists, use Gemini
         try:
             # Configure Gemini API

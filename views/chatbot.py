@@ -21,6 +21,11 @@ if "total_revenue" not in st.session_state:
     average_revenue_per_transaction = round(df["Total Revenue"].mean(), 2)  # Avg Revenue per Transaction
     total_quantity_sold = df["Quantity Sold"].sum()  # Total Quantity Sold
     sales_per_customer = round(total_revenue / df['Customer ID'].nunique(), 2)  # Sales per Customer
+    profit_by_category = (
+    df.groupby("Product_Category")["Profit"]
+    .sum()
+    .reset_index()
+    )
 
     # Store KPIs in session state
     st.session_state.total_revenue = total_revenue
@@ -31,6 +36,7 @@ if "total_revenue" not in st.session_state:
     st.session_state.average_revenue_per_transaction = average_revenue_per_transaction
     st.session_state.total_quantity_sold = total_quantity_sold
     st.session_state.sales_per_customer = sales_per_customer
+    st.session_state.profit_by_category = profit_by_category
 
 # Define the data summary context
 data_summary = (
@@ -43,6 +49,7 @@ data_summary = (
     f"Total Quantity Sold: {st.session_state.total_quantity_sold:,} units\n"
     f"Sales per Customer: ${st.session_state.sales_per_customer:,}\n"
     f"Total Unique Transactions: {st.session_state.total_orders}\n\n"
+    f"Total Unique Transactions: {st.session_state.profit_by_category}\n\n"
     "You are an intelligent assistant that provides explanations about the key performance indicators (KPIs) and trends in sales and profit. "
     "You can also identify patterns, insights, and suggestions based on the given metrics and user queries. "
     "Ask me about sales trends, profit margins, customer behavior, product category performance, or anything else related to the dataset. "

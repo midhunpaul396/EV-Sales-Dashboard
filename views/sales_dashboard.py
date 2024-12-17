@@ -75,6 +75,12 @@ product_performance = (
     .reset_index()
 )
 
+profit_by_category = (
+    df_selection.groupby("Product_Category")["Profit"]
+    .sum()
+    .reset_index()
+)
+
 # Define a threshold for classification
 threshold = product_performance["Total Revenue"].median()
 
@@ -91,7 +97,7 @@ if df_selection.empty:
     st.stop()
 
 # ---- MAIN PAGE ----s
-st.header(":bar_chart: AI Sales Dashboard")
+st.header(":bar_chart: EV Sales Dashboard")
 st.markdown("### Key Metrics")
 
 # --- KEY PERFORMANCE INDICATORS (KPIs) ---
@@ -116,6 +122,7 @@ st.session_state.average_profit_margin = average_profit_margin
 st.session_state.total_quantity_sold = total_quantity_sold
 st.session_state.sales_per_customer = sales_per_customer
 st.session_state.average_sales_per_order = average_sales_per_order
+st.session_state.profit_by_category = profit_by_category
 
 # Displaying KPIs
 left_column, middle_column, right_column = st.columns(3)
@@ -248,7 +255,7 @@ data_summary = (
 # Button to trigger insights generation
 if st.button("Generate Insights"):
     with st.spinner("Generating insights..."):
-        if True:  # Check if the OpenAI API key is missing
+        if gemini_api_key:  # Check if the OpenAI API key is missing
             if gemini_api_key:  # If Gemini API key exists, use Gemini
                 try:
                     # Configure Gemini API

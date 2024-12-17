@@ -1,19 +1,14 @@
 Product_Category,Product Name,Description,Tagline,Price
-Charging Station,Fast Charger,High-speed charging station for EVs,"""Charge fast, go farther""",300.0
-Charging Station,Supercharger,Ultra-fast charging solution,"""Power up in minutes""",500.0
-Accessory,Cable Clips,Clips to organize cables,"""Keep your cables tidy""",5.0
-Solar Panel,Rigid Panel,Durable solar panel for outdoor use,"""Harness the sun's power""",150.0
-EV Charger,Cable Organizer,Organizer for EV charging cables,"""Neat cables, easy access""",20.0
-EV Charger,Wallbox Charger,Wall-mounted home charger,"""Convenience at home""",350.0
-Accessory,Extension Cord,Heavy-duty extension cord,"""Power when you need it""",25.0
-Accessory,Adapter,Power adapter for various devices,"""Compatible with all""",10.0
-Accessory,Charging Cable,Fast-charging cable for EVs,"""Charge in no time""",30.0
-Battery Pack,"Power Bank 10,000mAh",Portable power bank for devices,"""Stay powered anywhere""",40.0
-Battery Pack,"Power Bank 20,000mAh",High-capacity portable power bank,"""Charge more, worry less""",60.0
-EV Charger,Docking Station,Station for portable chargers,"""Dock, charge, go""",150.0
-EV Charger,Portable Charger,Compact and portable charger for EVs,"""Charge on the go""",120.0
-Solar Panel,Flexible Panel,Flexible solar panel for portable use,"""Flexibility meets power""",100.0
-,Test,Test,Test,300.0
-,Test2,Test2,Test2,200.0
-,Test,Test,Test,1.0
-Test,TEst,Test,Test,1.0
+Charging Station,Supercharger,Ultra-fast charging solution,"""Power up in minutes""",500
+Accessory,Cable Clips,Clips to organize cables,"""Keep your cables tidy""",0
+Solar Panel,Rigid Panel,Durable solar panel for outdoor use,"""Harness the sun's power""",150
+EV Charger,Cable Organizer,Organizer for EV charging cables,"""Neat cables, easy access""",20
+EV Charger,Wallbox Charger,Wall-mounted home charger,"""Convenience at home""",350
+Accessory,Extension Cord,Heavy-duty extension cord,"""Power when you need it""",25
+Accessory,Adapter,Power adapter for various devices,"""Compatible with all""",10
+Accessory,Charging Cable,Fast-charging cable for EVs,"""Charge in no time""",30
+Battery Pack,"Power Bank 10,000mAh",Portable power bank for devices,"""Stay powered anywhere""",40
+Battery Pack,"Power Bank 20,000mAh",High-capacity portable power bank,"""Charge more, worry less""",60
+EV Charger,Docking Station,Station for portable chargers,"""Dock, charge, go""",150
+EV Charger,Portable Charger,Compact and portable charger for EVs,"""Charge on the go""",120
+Solar Panel,Flexible Panel,Flexible solar panel for portable use,"""Flexibility meets power""",100
