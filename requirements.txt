@@ -1,0 +1,7 @@
+pandas==2.2.3
+streamlit==1.40.1
+openai
+google-generativeai
+plotly
+fpdf
+kaleido
