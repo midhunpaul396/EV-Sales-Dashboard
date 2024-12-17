@@ -375,18 +375,21 @@ if st.button("Download PDF Report"):
             sales_by_region_path = "sales_by_region.png"
             top_products_path = "top_products_by_revenue.png"
             revenue_trend_path = "revenue_trend.png"
+            performance_path = "performance.png"
 
             # Save visualizations to files
             fig_sales_profit_bar.write_image(sales_profit_by_category_path)
             fig_region.write_image(sales_by_region_path)
             fig_top_products.write_image(top_products_path)
             fig_trend.write_image(revenue_trend_path)
+            fig_heatmap.write_image(performance_path)
 
             visualizations = {
                 "Sales and Profit by Product Category": sales_profit_by_category_path,
                 "Revenue and Profit by Region": sales_by_region_path,
                 "Top 5 Products by Total Revenue": top_products_path,
-                "Revenue Trend Over Time": revenue_trend_path
+                "Revenue Trend Over Time": revenue_trend_path,
+                "Product Performance by Region (Revenue)": performance_path
             }
 
             # Conditionally include AI insights
