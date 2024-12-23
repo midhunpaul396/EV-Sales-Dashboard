@@ -12,30 +12,19 @@ AI Dashbot is a dynamic, generative AI-powered dashboard designed to provide act
 - **AI Chat Bot**  
   Engage with a chatbot that leverages advanced AI models for intelligent responses and data queries.  
 
-- **Streamlined Navigation**  
-  Easily toggle between the dashboard and chatbot with a toolbar-style navigation system.  
+- **Marketing Content Generator**  
+  Marketing Content generator that generates marketing conent based on the AI generated insights.
 
 ---
 
 ## 🚀 Live Demo  
 
-Explore the live app: [AI Dashbot](https://aidashbot.streamlit.app/)  
+Explore the live app: [AI Dashbot](https://evdashboard.streamlit.app/)  
 
 ---
 📂 Project Structure
 bash
 Copy code
-AI Dashbot/
-│
-├── .streamlit/             # Streamlit configuration files  
-├── assets/                 # Static assets (e.g., logos, images)  
-├── views/                  # Application views (dashboard and chatbot)  
-│   ├── sales_dashboard.py  # Sales Dashboard logic  
-│   └── chatbot.py          # AI Chat Bot logic  
-├── Dataset.csv             # Sample dataset used for visualization  
-├── app.py                  # Main application entry point  
-├── requirements.txt        # Python dependencies  
-└── .gitignore              # Files to ignore in version control  
 ⚙️ Installation
 Clone the repository
 
